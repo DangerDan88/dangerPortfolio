@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "./components/Navbar";
 
-export default function Projects() {
+const Projects = () => {
   return (
     <div>
       <Head>
@@ -10,7 +10,11 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>Projects page</main>
+      <main className="flex justify-center py-6">
+        <h1 className="text-2xl font-bold">Projects</h1>
+      </main>
     </div>
   );
-}
+};
+
+export default Projects;

@@ -9,6 +9,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <div className="flex justify-center">
+        {" "}
+        <img
+          src="/images/profilepic.jpeg"
+          alt="me"
+          className="rounded-full h-40 w-40"
+        />
+      </div>
       <main className="flex justify-center text-black">
         <p className="py-6 text-lg">
           I'm Daniel I am a freelance full stack web developer. I am currently
@@ -28,7 +36,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block uppercase tracking-wide text-black text-xs font-bold mb-2"
-                for="grid-first-name"
+                htmlFor="grid-first-name"
               >
                 First Name
                 <input type="hidden" name="bot-field" />
@@ -45,7 +53,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block uppercase tracking-wide text-black text-xs font-bold mb-2"
-                for="grid-last-name"
+                htmlFor="grid-last-name"
               >
                 Last Name
                 <input
@@ -61,7 +69,7 @@ export default function Home() {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-black text-xs font-bold mb-2"
-                for="grid-password"
+                htmlFor="grid-password"
               >
                 E-mail
                 <input
@@ -76,7 +84,7 @@ export default function Home() {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-black text-xs font-bold mb-2"
-                for="grid-password"
+                htmlFor="grid-password"
               >
                 Message
               </label>
