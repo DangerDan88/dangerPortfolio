@@ -5,3 +5,9 @@
 body {
   background-color: rgb(136, 136, 148);
 }
+
+#grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 50px;
+}

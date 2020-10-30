@@ -10,8 +10,13 @@ const Projects = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="flex justify-center py-6">
-        <h1 className="text-2xl font-bold">Projects</h1>
+      <h1 className="flex justify-center text-2xl font-bold">Projects</h1>
+
+      <main id="grid" className="py-8">
+        <p className="p-2 text-center">Project 1</p>
+        <p2 className="p-2 text-center">Project2</p2>
+        <p3 className="p-2 text-center">Project 3</p3>
+        <p4 className="p-2 text-center">Project 4</p4>
       </main>
     </div>
   );
