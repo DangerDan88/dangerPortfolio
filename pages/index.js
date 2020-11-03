@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "./components/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,11 +11,12 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className="flex justify-center">
-        {" "}
-        <img
+        <Image
           src="/images/profilepic.jpeg"
           alt="me"
-          className="rounded-full h-40 w-40"
+          className="rounded-full"
+          height="225"
+          width="225"
         />
       </div>
       <main className="flex justify-center text-black">
