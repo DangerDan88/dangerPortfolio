@@ -40,10 +40,12 @@ const Projects = () => {
         <div className="max-w-sm rounded bg-white overflow-hidden shadow-lg">
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">GPH Equestrian</div>
-            <img
+            <Image
               className="w-full"
-              src="/images/learnbuild.png"
+              src="/images/gphProjectPic.png"
               alt="LBT game"
+              width="400"
+              height="400"
             />
             <p className="text-gray-700 text-base">Info here</p>
           </div>
@@ -61,11 +63,13 @@ const Projects = () => {
         </div>
         <div className="max-w-sm rounded bg-white overflow-hidden shadow-lg">
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2">GPH Eq</div>
-            <img
+            <div className="font-bold text-xl mb-2">Food Memory 101</div>
+            <Image
               className="w-full"
-              src="/images/learnbuild.png"
+              src="/images/foodMemory.png"
               alt="LBT game"
+              width="400"
+              height="400"
             />
             <p className="text-gray-700 text-base">Info here</p>
           </div>
