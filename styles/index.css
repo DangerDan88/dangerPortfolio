@@ -24,16 +24,16 @@ body {
 }
 
 .card {
-  width: 35ch;
-  height: 35ch;
+  width: 25ch;
+  height: 25ch;
   border-radius: 5px;
   background-size: cover;
-  background-image: url("/images/gphProjectPic.png");
+  background-image: url("/images/linkedin.svg");
   background-position: center center;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 15px solid white;
+  border: 15px solid blue;
 }
 
 .card:hover {

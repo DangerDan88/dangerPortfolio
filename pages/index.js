@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "./components/Navbar";
+import Card from "./components/Card";
 
 export default function Home() {
   return (
@@ -9,8 +10,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="flex justify-center"></div>
-      <main className="flex justify-center"></main>
+      <main className="flex justify-center">
+        {" "}
+        <a
+          href="https://www.linkedin.com/in/daniel-osornio-837547188/"
+          target="_blank"
+        >
+          <Card />
+        </a>
+      </main>
       <div className="flex justify-center mx-auto pt-6"></div>
     </div>
   );
