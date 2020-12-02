@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
     rgba(131, 58, 180, 1) 0%,
@@ -24,8 +23,8 @@ body {
 }
 
 .card {
-  width: 25ch;
-  height: 25ch;
+  width: 15ch;
+  height: 15ch;
   border-radius: 5px;
   background-size: cover;
   background-image: url("/images/linkedin.svg");

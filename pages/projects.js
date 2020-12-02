@@ -12,7 +12,9 @@ const Projects = () => {
       <Navbar />
       <h1 className="flex justify-center text-2xl font-bold">Projects</h1>
       <main id="grid" className="py-8">
-        <div className="gridBox bg-white rounded-lg flex justify-center"></div>
+        <div className="gridBox bg-white rounded-lg flex justify-center">
+          Gph
+        </div>
         <div className="gridBox  bg-white rounded-lg flex justify-center">
           LearnBuildType
         </div>
