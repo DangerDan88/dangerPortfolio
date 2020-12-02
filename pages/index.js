@@ -1,6 +1,8 @@
 import Head from "next/head";
-import Navbar from "./components/Navbar";
+//import Navbar from "./components/Navbar";
 import Card from "./components/Card";
+import GitCard from "./components/GitCard";
+import AnimatedHeader from "./components/AnimatedHeader";
 
 export default function Home() {
   return (
@@ -9,8 +11,10 @@ export default function Home() {
         <title>Daniel's Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <main className="flex justify-center">
+      <div className="flex justify-center">
+        <AnimatedHeader />
+      </div>
+      <main id="grid" className="py-8">
         {" "}
         <a
           href="https://www.linkedin.com/in/daniel-osornio-837547188/"
@@ -18,8 +22,11 @@ export default function Home() {
         >
           <Card />
         </a>
+        <a href="https://github.com/DangerDan88" target="_blank">
+          {" "}
+          <GitCard />
+        </a>
       </main>
-      <div className="flex justify-center mx-auto pt-6"></div>
     </div>
   );
 }
