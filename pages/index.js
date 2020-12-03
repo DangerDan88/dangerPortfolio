@@ -2,6 +2,7 @@ import Head from "next/head";
 //import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import GitCard from "./components/GitCard";
+import MailCard from "./components/MailCard";
 import AnimatedHeader from "./components/AnimatedHeader";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
           {" "}
           <GitCard />
         </a>
+        <MailCard />
       </main>
     </div>
   );

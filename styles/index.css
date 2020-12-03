@@ -13,12 +13,8 @@ body {
 
 #grid {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 50px);
-}
-
-.gridBox {
-  grid-row: span 4;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
 }
 
 .card {
@@ -52,5 +48,22 @@ body {
 }
 
 .card2:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.card3 {
+  width: 15ch;
+  height: 15ch;
+  border-radius: 5px;
+  background-size: cover;
+  background-image: url("/images/gmail.svg");
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid blue;
+}
+
+.card3:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
