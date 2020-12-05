@@ -27,7 +27,10 @@ export default function Home() {
           {" "}
           <GitCard />
         </a>
-        <MailCard />
+        <a href="mailto:dangerdan808@gmail.com">
+          {" "}
+          <MailCard />
+        </a>
       </main>
     </div>
   );

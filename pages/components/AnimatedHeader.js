@@ -10,26 +10,22 @@ function AnimateHeader() {
       height: 0,
       innerHeight: 0,
       transform: "perspective(600px) rotateX(0deg)",
-      color: "#8fa5b6",
+      color: "#FFFFFF",
     },
     enter: [
-      { opacity: 1, height: 100, innerHeight: 100 },
-      { transform: "perspective(600px) rotateX(180deg)", color: "#28d79f" },
+      { opacity: 1, height: 125, innerHeight: 125 },
+      { transform: "perspective(600px) rotateX(180deg)", color: "#FFFFFF" },
       { transform: "perspective(600px) rotateX(0deg)" },
     ],
-    leave: [
-      { color: "#c23369" },
-      { innerHeight: 0 },
-      { opacity: 0, height: 0 },
-    ],
-    update: { color: "#28b4d7" },
+    update: { color: "#FFFFFF" },
   });
   const reset = useCallback(() => {
     ref.current.map(clearTimeout);
     ref.current = [];
-    set([]);
-    ref.current.push(setTimeout(() => set(["Daniel Osornio"]), 2000));
-    ref.current.push(setTimeout(() => set(["Daniel Osornio"]), 8000));
+    ref.current.push(
+      setTimeout(() => set(["Daniel Osornio"]), 3000),
+      setTimeout(() => set(["Full-Stack Web Developer"]), 2000)
+    );
   }, []);
 
   useEffect(() => void reset(), []);
@@ -41,7 +37,6 @@ function AnimateHeader() {
           className="transitions-item flex-justify-center"
           key={key}
           style={rest}
-          onClick={reset}
         >
           <animated.h1
             className="text-4xl flex justify-center"
