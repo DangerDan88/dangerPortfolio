@@ -24,7 +24,7 @@ function AnimateHeader() {
     ref.current = [];
     ref.current.push(
       setTimeout(() => set(["Daniel Osornio"]), 3000),
-      setTimeout(() => set(["Full-Stack Web Developer"]), 2000)
+      setTimeout(() => set(["Software Engineer"]), 2000)
     );
   }, []);
 
@@ -34,13 +34,17 @@ function AnimateHeader() {
     <div>
       {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
         <animated.div
-          className="transitions-item flex-justify-center"
+          className="transitions-item text-center flex justify-center"
           key={key}
           style={rest}
         >
           <animated.h1
-            className="text-4xl flex justify-center"
-            style={{ overflow: "hidden", height: innerHeight }}
+            className="text-4xl text-center"
+            style={{
+              overflow: "hidden",
+              height: innerHeight,
+              margin: "auto",
+            }}
           >
             {item}
           </animated.h1>

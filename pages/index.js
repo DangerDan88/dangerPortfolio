@@ -12,7 +12,7 @@ export default function Home() {
         <title>Daniel's Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex justify-center">
+      <div className="animate">
         <AnimatedHeader />
       </div>
       <main id="grid" className="py-8">
