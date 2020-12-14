@@ -5,12 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 
 body {
-  background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 0.6755077030812324) 100%
-  );
+  background-image: url("../public/images/topography.svg"),
+    linear-gradient(0deg, rgba(38, 195, 34, 1) 26%, rgba(45, 156, 253, 1) 100%);
   font-family: "Do Hyeon", sans-serif;
 }
 
