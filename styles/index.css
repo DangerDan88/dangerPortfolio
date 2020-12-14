@@ -7,6 +7,8 @@
 body {
   background-image: url("../public/images/topography.svg"),
     linear-gradient(0deg, rgba(38, 195, 34, 1) 26%, rgba(45, 156, 253, 1) 100%);
+  background-size: 340px, auto;
+  min-height: calc(100vh - 100px);
   font-family: "Do Hyeon", sans-serif;
 }
 
