@@ -23,8 +23,8 @@ function AnimateHeader() {
     ref.current.map(clearTimeout);
     ref.current = [];
     ref.current.push(
-      setTimeout(() => set(["Daniel Osornio"]), 3000),
-      setTimeout(() => set(["Software Engineer"]), 2000)
+      setTimeout(() => set(["Daniel Osornio"]), 1500),
+      setTimeout(() => set(["Software Engineer"]), 1000)
     );
   }, []);
 
